@@ -38,7 +38,10 @@
                 every detail as it delivers the end proudct the user obtains.
               </p>
 
-              
+# LeetCode 
+
+![LeetCode Stats](https://leetcard.jacoblin.cool/Abinand0911?theme=dark&font=Hanuman&ext=contest)
+
 ## My Account 
 ![abiji-2020's Stats](https://github-readme-stats.vercel.app/api?username=abiji-2020&theme=radical&show_icons=true&hide_border=false&count_private=true)  ![abiji-2020's Streak](https://github-readme-streak-stats.herokuapp.com/?user=abiji-2020&theme=radical&hide_border=false)
 
