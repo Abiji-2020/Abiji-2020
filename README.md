@@ -1,4 +1,6 @@
 # Abinand P
+
+## About Myself 
  <p className="font-medium text-justify  ">
                 🌟 Hi, I'm Abinand P, aspiring computer science engineering
                 student with an unwavering passion for technology, an aspiring
