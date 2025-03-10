@@ -8,8 +8,7 @@ Eagerly learning about technologies 🪄
                 student with an unwavering passion for technology, an aspiring
                 interest in DevOps, and a commitment to open source
                 contributions with the indulgence in the thought process of
-                developing softwares and web development based on the java
-                springboot, MERN Stack, and Next.js.
+                developing softwares.
               </p>
   <p className="font-bold ">
                 <span className="font-bold text-dark/80">
