@@ -23,10 +23,10 @@ Eagerly learning about technologies 🪄
                 cloud works and the fast paced devlopment and delivery thought
                 me of thinking to improve more of the tech.
               </p>
-               <p className="font-medium text-justify ">
-                <span className="font-bold text-dark/80">
+               <p >
+             
                   🚀 Aspiring DevOps Learner:
-                </span>
+              
                 While my journey into DevOps is yet to begin, I'm eagerly
                 anticipating the challenges and learning opportunities it
                 promises. I am enthusiastic about bridging the gap between
