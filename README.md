@@ -10,7 +10,7 @@ Eagerly learning about technologies 🪄
                 contributions with the indulgence in the thought process of
                 developing softwares.
               </p>
-  <p className="font-bold ">
+  <p >
                 <span className="font-bold text-dark/80">
                   🌐 Tech Enthusiast:
                 </span>
