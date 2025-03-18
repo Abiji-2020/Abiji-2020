@@ -3,7 +3,7 @@
 Eagerly learning about technologies 🪄
 
 ## About Myself 
- <p className="font-medium text-justify  ">
+ <p>
                 🌟 Hi, I'm Abinand P, aspiring computer science engineering
                 student with an unwavering passion for technology, an aspiring
                 interest in DevOps, and a commitment to open source
