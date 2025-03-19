@@ -11,10 +11,9 @@ Eagerly learning about technologies 🪄
                 developing softwares.
               </p>
   <p >
-                <span className="font-bold text-dark/80">
-                  🌐 Tech Enthusiast:
-                </span>
-                Currently navigating my pre-final year  in computer science and
+                   🌐 Tech Enthusiast:
+                
+  Currently navigating my pre-final year  in computer science and
                 engineering, I'm building a solid foundation in programming and
                 exploring the vast landscape of technology. As the computer
                 Science is a vast domain, I am currently selecting myself the
