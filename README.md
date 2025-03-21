@@ -21,9 +21,9 @@ Eagerly learning about technologies 🪄
                 the adapting world. The most adaptive being the computer and the
                 cloud works and the fast paced devlopment and delivery thought
                 me of thinking to improve more of the tech.
-              </p>
-               <p >
-                  🚀 Aspiring DevOps Learner:
+            
+                 
+  🚀 Aspiring DevOps Learner:
               While my journey into DevOps is yet to begin, I'm eagerly
                 anticipating the challenges and learning opportunities it
                 promises. I am enthusiastic about bridging the gap between
