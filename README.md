@@ -25,8 +25,8 @@ Eagerly learning about technologies 🪄
                  
   🚀 Aspiring DevOps Learner:
   
-              While my journey into DevOps is yet to begin, I'm eagerly
-                anticipating the challenges and learning opportunities it
+   While my journey into DevOps is yet to begin, I'm eagerly
+              anticipating the challenges and learning opportunities it
                 promises. I am enthusiastic about bridging the gap between
                 development and operations, optimizing processes, and
                 contributing to the evolution of software development practices.
@@ -36,8 +36,7 @@ Eagerly learning about technologies 🪄
                 backed by the DevOps culture, which made my curious mind to
                 devlve into the learning path of DevOps culture as it requires
                 fast adapting nature and improving and detailing in each and
-                every detail as it delivers the end proudct the user obtains.
-              
+                every detail as it delivers the end proudct the user obtains.              
 <details>
 <summary>
 <h1>LeetCode Stats  🧑‍💻</h1></summary>
