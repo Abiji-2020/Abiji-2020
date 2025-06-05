@@ -1,6 +1,6 @@
 # Abinand P
 
-Eagerly learning about technologies 🪄
+Eagerly learning about technologies and breaking systems 🪄
 
 ## About Myself 
    🌟 Hi, I'm Abinand P, aspiring computer science engineering
