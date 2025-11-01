@@ -72,8 +72,7 @@ jobs:
                 const prNumber = pr.number;
                 const repo = pr.repository_url.split('/').slice(-1)[0];
                 const owner = pr.repository_url.split('/').slice(-2, -1)[0];
-                // Open PR SVG icon in blue
-                prsList += `- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-pull-request-16.svg" width="16" height="16" alt="Open PR"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+                prsList += `<img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
               });
               prsList += '\n';
             } else {
@@ -115,8 +114,7 @@ jobs:
                   const prNumber = pr.number;
                   const repo = pr.repository_url.split('/').slice(-1)[0];
                   const owner = pr.repository_url.split('/').slice(-2, -1)[0];
-                  // Merged PR SVG icon (checkmark in green)
-                  prsList += `- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-merge-16.svg" width="16" height="16" alt="Merged PR"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+                  prsList += `<img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
                 });
                 prsList += '\n';
               }
@@ -128,8 +126,7 @@ jobs:
                   const prNumber = pr.number;
                   const repo = pr.repository_url.split('/').slice(-1)[0];
                   const owner = pr.repository_url.split('/').slice(-2, -1)[0];
-                  // Closed PR SVG icon (X mark in red)
-                  prsList += `- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-pull-request-closed-16.svg" width="16" height="16" alt="Closed PR"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+                  prsList += `<img src="./asset/closed-pr.svg" width="24" height="24" alt="Closed PR" style="vertical-align:text-bottom;margin-right:6px;"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
                 });
                 prsList += '\n';
               }
@@ -141,14 +138,16 @@ jobs:
             // Read the README file
             let readmeContent = fs.readFileSync('README.md', 'utf8');
 
-            // Replace the entire stats section (from header to closing div)
-            const statsStart = readmeContent.indexOf('| Metric | Link |');
-            const statsEnd = readmeContent.indexOf('</div>', statsStart) + 6;
-
-            if (statsStart !== -1 && statsEnd > statsStart) {
-              const beforeStats = readmeContent.substring(0, statsStart);
-              const afterStats = readmeContent.substring(statsEnd);
-              readmeContent = beforeStats + statsTable + '\n' + afterStats;
+            // Replace the stats section strictly between markers to avoid malformed comments
+            const statsMarkerStart = '<!-- GITHUB-STATS:START -->';
+            const statsMarkerEnd = '<!-- GITHUB-STATS:END -->';
+            const ghStartIdx = readmeContent.indexOf(statsMarkerStart);
+            const ghEndIdx = readmeContent.indexOf(statsMarkerEnd);
+            if (ghStartIdx !== -1 && ghEndIdx !== -1 && ghEndIdx > ghStartIdx) {
+              const before = readmeContent.substring(0, ghStartIdx + statsMarkerStart.length);
+              const after = readmeContent.substring(ghEndIdx);
+              const statsBlock = `\n<div align="center">\n\n${statsTable}\n\n</div>\n`;
+              readmeContent = before + statsBlock + after;
             }
 
             // Find and replace the open PRs section
