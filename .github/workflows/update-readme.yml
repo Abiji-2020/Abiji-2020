@@ -1,0 +1,105 @@
+name: Update README with GitHub Stats
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update README with GitHub stats
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+
+            // Fetch open PRs with details
+            const prsOpen = await github.rest.search.issuesAndPullRequests({
+              q: 'author:Abiji-2020 type:pr state:open',
+              per_page: 10,
+              sort: 'created',
+              order: 'desc'
+            });
+
+            // Fetch merged PRs count
+            const prsMerged = await github.rest.search.issuesAndPullRequests({
+              q: 'author:Abiji-2020 type:pr state:closed',
+              per_page: 1
+            });
+
+            // Fetch issues count
+            const issues = await github.rest.search.issuesAndPullRequests({
+              q: 'author:Abiji-2020 type:issue',
+              per_page: 1
+            });
+
+            const openPRCount = prsOpen.data.total_count;
+            const mergedPRCount = prsMerged.data.total_count;
+            const issuesCount = issues.data.total_count;
+
+            // Build open PRs list
+            let openPRsList = '';
+            if (openPRCount > 0) {
+              openPRsList = '### Currently Working On\n\n';
+              prsOpen.data.items.forEach((pr, index) => {
+                const prNumber = pr.number;
+                const repo = pr.repository_url.split('/').slice(-1)[0];
+                const owner = pr.repository_url.split('/').slice(-2, -1)[0];
+                openPRsList += `${index + 1}. [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+              });
+              openPRsList += '\n';
+            } else {
+              openPRsList = '### Currently Working On\n\nNo active pull requests at the moment.\n\n';
+            }
+
+            // Build stats table
+            const statsTable = `| Metric | Link |\n|--------|------|\n| **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-${openPRCount}-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |\n| **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-${mergedPRCount}-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aclosed) |\n| **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-${issuesCount}-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |`;
+
+            // Read the README file
+            let readmeContent = fs.readFileSync('README.md', 'utf8');
+
+            // Replace the stats table
+            const tableStart = readmeContent.indexOf('| **Open Pull Requests** |');
+            const tableEnd = readmeContent.indexOf('</div>', tableStart) - 1;
+
+            if (tableStart !== -1 && tableEnd > tableStart) {
+              readmeContent = readmeContent.substring(0, tableStart) + statsTable + readmeContent.substring(tableEnd);
+            }
+
+            // Find and replace the open PRs section if it exists, or add it before GitHub Activity
+            const activePRStart = readmeContent.indexOf('<!-- ACTIVE-PRS:START -->');
+            const activePREnd = readmeContent.indexOf('<!-- ACTIVE-PRS:END -->');
+
+            if (activePRStart !== -1 && activePREnd !== -1) {
+              const newPRSection = `<!-- ACTIVE-PRS:START -->\n${openPRsList}<!-- ACTIVE-PRS:END -->`;
+              readmeContent = readmeContent.substring(0, activePRStart) + newPRSection + readmeContent.substring(activePREnd + 24);
+            }
+
+            // Write the updated content back
+            fs.writeFileSync('README.md', readmeContent, 'utf8');
+            console.log(`Updated README: ${openPRCount} open PRs, ${mergedPRCount} merged, ${issuesCount} issues`);
+
+      - name: Commit and push changes
+        run: >
+          git config --local user.email "action@github.com" &&
+          git config --local user.name "GitHub Action" &&
+          if git diff --quiet README.md; then
+            echo "No changes to commit";
+          else
+            git add README.md &&
+            git commit -m "chore: update README with latest GitHub stats" &&
+            git push;
+          fi
