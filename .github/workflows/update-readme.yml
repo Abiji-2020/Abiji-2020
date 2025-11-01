@@ -88,9 +88,13 @@ jobs:
 
               for (const pr of prsClosed.data.items) {
                 // Check if PR is merged by looking at the merged_at field
+                // Extract owner and repo from the repository URL
+                const prOwner = pr.repository_url.split('/').slice(-2, -1)[0];
+                const prRepo = pr.repository_url.split('/').slice(-1)[0];
+                
                 const prDetails = await github.rest.pulls.get({
-                  owner: 'Abiji-2020',
-                  repo: pr.repository_url.split('/').slice(-1)[0],
+                  owner: prOwner,
+                  repo: prRepo,
                   pull_number: pr.number
                 });
 
