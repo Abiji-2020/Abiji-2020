@@ -62,7 +62,6 @@
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Fix: error in AI usage endpoint ](https://github.com/InsForge/InsForge/pull/475) - `InsForge/InsForge#475`
 
 <!-- ACTIVE-PRS:END -->
-
 <!-- GITHUB-STATS:START -->
 <div align="center">
 
