@@ -37,14 +37,20 @@ jobs:
             // Fetch recently closed/merged PRs
             const prsClosed = await github.rest.search.issuesAndPullRequests({
               q: 'author:Abiji-2020 type:pr state:closed',
-              per_page: 5,
+              per_page: 20,
               sort: 'updated',
               order: 'desc'
             });
 
             // Fetch merged PRs count
             const prsMergedCount = await github.rest.search.issuesAndPullRequests({
-              q: 'author:Abiji-2020 type:pr state:closed',
+              q: 'author:Abiji-2020 type:pr is:merged',
+              per_page: 1
+            });
+
+            // Fetch closed but not merged PRs count
+            const prsClosedNotMergedCount = await github.rest.search.issuesAndPullRequests({
+              q: 'author:Abiji-2020 type:pr is:closed -is:merged',
               per_page: 1
             });
 
@@ -58,7 +64,7 @@ jobs:
             const mergedPRCount = prsMergedCount.data.total_count;
             const issuesCount = issues.data.total_count;
 
-            // Build open PRs list with emoji
+            // Build open PRs list with SVG icons
             let prsList = '';
             if (openPRCount > 0) {
               prsList = '### 🔄 Currently Working On\n\n';
@@ -66,27 +72,67 @@ jobs:
                 const prNumber = pr.number;
                 const repo = pr.repository_url.split('/').slice(-1)[0];
                 const owner = pr.repository_url.split('/').slice(-2, -1)[0];
-                prsList += `- 🟢 [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+                // Open PR SVG icon in blue
+                prsList += `- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-pull-request-16.svg" width="16" height="16" alt="Open PR"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
               });
               prsList += '\n';
             } else {
               prsList = '### 🔄 Currently Working On\n\nNo active pull requests at the moment.\n\n';
             }
 
-            // Build recently closed PRs list with emoji
+            // Build recently closed PRs list with emoji differentiation
             if (prsClosed.data.items.length > 0) {
-              prsList += '### ✅ Recently Closed/Merged\n\n';
-              prsClosed.data.items.forEach((pr) => {
-                const prNumber = pr.number;
-                const repo = pr.repository_url.split('/').slice(-1)[0];
-                const owner = pr.repository_url.split('/').slice(-2, -1)[0];
-                prsList += `- ✓ [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
-              });
-              prsList += '\n';
+              // Separate merged and closed PRs
+              const mergedPRs = [];
+              const closedNotMergedPRs = [];
+
+              for (const pr of prsClosed.data.items) {
+                // Check if PR is merged by looking at the merged_at field
+                const prDetails = await github.rest.pulls.get({
+                  owner: 'Abiji-2020',
+                  repo: pr.repository_url.split('/').slice(-1)[0],
+                  pull_number: pr.number
+                });
+
+                if (prDetails.data.merged) {
+                  mergedPRs.push(pr);
+                } else {
+                  closedNotMergedPRs.push(pr);
+                }
+
+                // Limit to 5 total
+                if (mergedPRs.length + closedNotMergedPRs.length >= 5) break;
+              }
+
+              // Add merged PRs section
+              if (mergedPRs.length > 0) {
+                prsList += '### ✅ Recently Merged\n\n';
+                mergedPRs.forEach((pr) => {
+                  const prNumber = pr.number;
+                  const repo = pr.repository_url.split('/').slice(-1)[0];
+                  const owner = pr.repository_url.split('/').slice(-2, -1)[0];
+                  // Merged PR SVG icon (checkmark in green)
+                  prsList += `- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-merge-16.svg" width="16" height="16" alt="Merged PR"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+                });
+                prsList += '\n';
+              }
+
+              // Add closed (not merged) PRs section
+              if (closedNotMergedPRs.length > 0) {
+                prsList += '### ❌ Recently Closed (Not Merged)\n\n';
+                closedNotMergedPRs.forEach((pr) => {
+                  const prNumber = pr.number;
+                  const repo = pr.repository_url.split('/').slice(-1)[0];
+                  const owner = pr.repository_url.split('/').slice(-2, -1)[0];
+                  // Closed PR SVG icon (X mark in red)
+                  prsList += `- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-pull-request-closed-16.svg" width="16" height="16" alt="Closed PR"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+                });
+                prsList += '\n';
+              }
             }
 
             // Build stats table (with header)
-            const statsTable = `| Metric | Link |\n|--------|------|\n| **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-${openPRCount}-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |\n| **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-${mergedPRCount}-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aclosed) |\n| **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-${issuesCount}-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |`;
+            const statsTable = `| Metric | Link |\n|--------|------|\n| **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-${openPRCount}-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |\n| **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-${prsMergedCount.data.total_count}-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Amerged) |\n| **Closed (Not Merged)** | [![Closed](https://img.shields.io/badge/Closed-${prsClosedNotMergedCount.data.total_count}-red?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Aclosed+-is%3Amerged) |\n| **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-${issuesCount}-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |`;
 
             // Read the README file
             let readmeContent = fs.readFileSync('README.md', 'utf8');
