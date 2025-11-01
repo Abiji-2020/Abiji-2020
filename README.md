@@ -47,7 +47,7 @@
 <!-- ACTIVE-PRS:START -->
 ### 🔄 Currently Working On
 
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
+- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [rework: removed all the  previous data](https://github.com/Abiji-2020/Portfolio/pull/6) - `Abiji-2020/Portfolio#6`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: add KMS feature in the SDK](https://github.com/Infisical/node-sdk-v2/pull/27) - `Infisical/node-sdk-v2#27`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [fix:  Users.CreateUser... vague error into optional name parameter.](https://github.com/appwrite/appwrite/pull/10033) - `appwrite/appwrite#10033`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [test: started adding sample test](https://github.com/Abiji-2020/NexOrb/pull/11) - `Abiji-2020/NexOrb#11`
@@ -59,17 +59,19 @@
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Feat/csv bulk import](https://github.com/InsForge/InsForge/pull/500) - `InsForge/InsForge#500`
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [updating ](https://github.com/Abiji-2020/InsForge/pull/1) - `Abiji-2020/InsForge#1`
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [FIX : Single toast for bulk deletion in object storage. ](https://github.com/InsForge/InsForge/pull/479) - `InsForge/InsForge#479`
-- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Fix: error in AI usage endpoint ](https://github.com/InsForge/InsForge/pull/475) - `InsForge/InsForge#475`
 
-<!-- ACTIVE-PRS:END -->
-<!-- GITHUB-STATS:START -->
+### ❌ Recently Closed (Not Merged)
+
+- <img src="./asset/closed-pr.svg" width="24" height="24" alt="Closed PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
+
+<!-- ACTIVE-PRS:END --><!-- GITHUB-STATS:START -->
 <div align="center">
 
 | Metric | Link |
 |--------|------|
 | **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-5-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
 | **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-250-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Amerged) |
-| **Closed (Not Merged)** | [![Closed](https://img.shields.io/badge/Closed-28-red?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Aclosed+-is%3Amerged) |
+| **Closed (Not Merged)** | [![Closed](https://img.shields.io/badge/Closed-29-red?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Aclosed+-is%3Amerged) |
 | **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-38-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |
 
 </div>
