@@ -61,8 +61,7 @@
 <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [FIX : Single toast for bulk deletion in object storage. ](https://github.com/InsForge/InsForge/pull/479) - `InsForge/InsForge#479`
 <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Fix: error in AI usage endpoint ](https://github.com/InsForge/InsForge/pull/475) - `InsForge/InsForge#475`
 
-<!-- ACTIVE-PRS:END -->
-<!-- GITHUB-STATS:START -->
+<!-- ACTIVE-PRS:END --><!-- GITHUB-STATS:START -->
 <div align="center">
 
 | Metric | Link |
