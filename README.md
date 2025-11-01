@@ -47,41 +47,30 @@
 <!-- ACTIVE-PRS:START -->
 ### 🔄 Currently Working On
 
-- 🟢 [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
-- 🟢 [feat: add KMS feature in the SDK](https://github.com/Infisical/node-sdk-v2/pull/27) - `Infisical/node-sdk-v2#27`
-- 🟢 [fix:  Users.CreateUser... vague error into optional name parameter.](https://github.com/appwrite/appwrite/pull/10033) - `appwrite/appwrite#10033`
-- 🟢 [test: started adding sample test](https://github.com/Abiji-2020/NexOrb/pull/11) - `Abiji-2020/NexOrb#11`
-- 🟢 [Updated Documentation ](https://github.com/pravintargaryen/C-AI/pull/1) - `pravintargaryen/C-AI#1`
+- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-pull-request-16.svg" width="16" height="16" alt="Open PR"/> [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
+- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-pull-request-16.svg" width="16" height="16" alt="Open PR"/> [feat: add KMS feature in the SDK](https://github.com/Infisical/node-sdk-v2/pull/27) - `Infisical/node-sdk-v2#27`
+- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-pull-request-16.svg" width="16" height="16" alt="Open PR"/> [fix:  Users.CreateUser... vague error into optional name parameter.](https://github.com/appwrite/appwrite/pull/10033) - `appwrite/appwrite#10033`
+- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-pull-request-16.svg" width="16" height="16" alt="Open PR"/> [test: started adding sample test](https://github.com/Abiji-2020/NexOrb/pull/11) - `Abiji-2020/NexOrb#11`
+- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-pull-request-16.svg" width="16" height="16" alt="Open PR"/> [Updated Documentation ](https://github.com/pravintargaryen/C-AI/pull/1) - `pravintargaryen/C-AI#1`
 
-### ✅ Recently Closed/Merged
+### ✅ Recently Merged
 
-- ✓ [feat: Scheduling of cron jobs. ](https://github.com/InsForge/InsForge/pull/491) - `InsForge/InsForge#491`
-- ✓ [Feat/csv bulk import](https://github.com/InsForge/InsForge/pull/500) - `InsForge/InsForge#500`
-- ✓ [updating ](https://github.com/Abiji-2020/InsForge/pull/1) - `Abiji-2020/InsForge#1`
-- ✓ [FIX : Single toast for bulk deletion in object storage. ](https://github.com/InsForge/InsForge/pull/479) - `InsForge/InsForge#479`
-- ✓ [Fix: error in AI usage endpoint ](https://github.com/InsForge/InsForge/pull/475) - `InsForge/InsForge#475`
+- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-merge-16.svg" width="16" height="16" alt="Merged PR"/> [feat: Scheduling of cron jobs. ](https://github.com/InsForge/InsForge/pull/491) - `InsForge/InsForge#491`
+- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-merge-16.svg" width="16" height="16" alt="Merged PR"/> [Feat/csv bulk import](https://github.com/InsForge/InsForge/pull/500) - `InsForge/InsForge#500`
+- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-merge-16.svg" width="16" height="16" alt="Merged PR"/> [updating ](https://github.com/Abiji-2020/InsForge/pull/1) - `Abiji-2020/InsForge#1`
+- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-merge-16.svg" width="16" height="16" alt="Merged PR"/> [FIX : Single toast for bulk deletion in object storage. ](https://github.com/InsForge/InsForge/pull/479) - `InsForge/InsForge#479`
+- <img src="https://cdn.jsdelivr.net/gh/primer/octicons@main/icons/git-merge-16.svg" width="16" height="16" alt="Merged PR"/> [Fix: error in AI usage endpoint ](https://github.com/InsForge/InsForge/pull/475) - `InsForge/InsForge#475`
 
-<!-- ACTIVE-PRS:END --><!-- GITHUB-STATS:START -->
+<!-- ACTIVE-PRS:END -->!-- GITHUB-STATS:START -->
 <div align="center">
 
 | Metric | Link |
 |--------|------|
 | **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-5-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
-| **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-278-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aclosed) |
+| **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-250-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Amerged) |
+| **Closed (Not Merged)** | [![Closed](https://img.shields.io/badge/Closed-28-red?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Aclosed+-is%3Amerged) |
 | **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-38-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |
 
-<!-- GITHUB-STATS:END -->
-
----
-
-
-## LeetCode Stats
-
-<div align="center">
-
-![LeetCode Stats](https://leetcard.jacoblin.cool/Abinand0911?theme=dark&font=Hanuman&ext=contest)
-
-</div>
 
 ---
 
