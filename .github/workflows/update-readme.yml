@@ -72,7 +72,7 @@ jobs:
                 const prNumber = pr.number;
                 const repo = pr.repository_url.split('/').slice(-1)[0];
                 const owner = pr.repository_url.split('/').slice(-2, -1)[0];
-                prsList += `<img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+                prsList += `- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
               });
               prsList += '\n';
             } else {
@@ -114,7 +114,7 @@ jobs:
                   const prNumber = pr.number;
                   const repo = pr.repository_url.split('/').slice(-1)[0];
                   const owner = pr.repository_url.split('/').slice(-2, -1)[0];
-                  prsList += `<img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+                  prsList += `- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
                 });
                 prsList += '\n';
               }
@@ -126,7 +126,7 @@ jobs:
                   const prNumber = pr.number;
                   const repo = pr.repository_url.split('/').slice(-1)[0];
                   const owner = pr.repository_url.split('/').slice(-2, -1)[0];
-                  prsList += `<img src="./asset/closed-pr.svg" width="24" height="24" alt="Closed PR" style="vertical-align:text-bottom;margin-right:6px;"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+                  prsList += `- <img src="./asset/closed-pr.svg" width="24" height="24" alt="Closed PR" style="vertical-align:text-bottom;margin-right:6px;"/> [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
                 });
                 prsList += '\n';
               }

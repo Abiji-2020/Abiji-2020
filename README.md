@@ -47,21 +47,23 @@
 <!-- ACTIVE-PRS:START -->
 ### 🔄 Currently Working On
 
-<img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
-<img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: add KMS feature in the SDK](https://github.com/Infisical/node-sdk-v2/pull/27) - `Infisical/node-sdk-v2#27`
-<img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [fix:  Users.CreateUser... vague error into optional name parameter.](https://github.com/appwrite/appwrite/pull/10033) - `appwrite/appwrite#10033`
-<img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [test: started adding sample test](https://github.com/Abiji-2020/NexOrb/pull/11) - `Abiji-2020/NexOrb#11`
-<img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Updated Documentation ](https://github.com/pravintargaryen/C-AI/pull/1) - `pravintargaryen/C-AI#1`
+- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
+- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: add KMS feature in the SDK](https://github.com/Infisical/node-sdk-v2/pull/27) - `Infisical/node-sdk-v2#27`
+- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [fix:  Users.CreateUser... vague error into optional name parameter.](https://github.com/appwrite/appwrite/pull/10033) - `appwrite/appwrite#10033`
+- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [test: started adding sample test](https://github.com/Abiji-2020/NexOrb/pull/11) - `Abiji-2020/NexOrb#11`
+- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Updated Documentation ](https://github.com/pravintargaryen/C-AI/pull/1) - `pravintargaryen/C-AI#1`
 
 ### ✅ Recently Merged
 
-<img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: Scheduling of cron jobs. ](https://github.com/InsForge/InsForge/pull/491) - `InsForge/InsForge#491`
-<img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Feat/csv bulk import](https://github.com/InsForge/InsForge/pull/500) - `InsForge/InsForge#500`
-<img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [updating ](https://github.com/Abiji-2020/InsForge/pull/1) - `Abiji-2020/InsForge#1`
-<img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [FIX : Single toast for bulk deletion in object storage. ](https://github.com/InsForge/InsForge/pull/479) - `InsForge/InsForge#479`
-<img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Fix: error in AI usage endpoint ](https://github.com/InsForge/InsForge/pull/475) - `InsForge/InsForge#475`
+- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: Scheduling of cron jobs. ](https://github.com/InsForge/InsForge/pull/491) - `InsForge/InsForge#491`
+- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Feat/csv bulk import](https://github.com/InsForge/InsForge/pull/500) - `InsForge/InsForge#500`
+- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [updating ](https://github.com/Abiji-2020/InsForge/pull/1) - `Abiji-2020/InsForge#1`
+- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [FIX : Single toast for bulk deletion in object storage. ](https://github.com/InsForge/InsForge/pull/479) - `InsForge/InsForge#479`
+- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Fix: error in AI usage endpoint ](https://github.com/InsForge/InsForge/pull/475) - `InsForge/InsForge#475`
 
-<!-- ACTIVE-PRS:END -->!-- GITHUB-STATS:START -->
+<!-- ACTIVE-PRS:END -->
+
+<!-- GITHUB-STATS:START -->
 <div align="center">
 
 | Metric | Link |
