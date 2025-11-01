@@ -45,13 +45,17 @@
 ## GitHub Activity
 
 <!-- ACTIVE-PRS:START -->
-### Currently Working On
+### 🔄 Currently Working On
 
-1. [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
-2. [feat: add KMS feature in the SDK](https://github.com/Infisical/node-sdk-v2/pull/27) - `Infisical/node-sdk-v2#27`
-3. [fix:  Users.CreateUser... vague error into optional name parameter.](https://github.com/appwrite/appwrite/pull/10033) - `appwrite/appwrite#10033`
-4. [test: started adding sample test](https://github.com/Abiji-2020/NexOrb/pull/11) - `Abiji-2020/NexOrb#11`
-5. [Updated Documentation ](https://github.com/pravintargaryen/C-AI/pull/1) - `pravintargaryen/C-AI#1`
+1. 🟢 [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
+2. 🟢 [feat: add KMS feature in the SDK](https://github.com/Infisical/node-sdk-v2/pull/27) - `Infisical/node-sdk-v2#27`
+3. 🟢 [fix:  Users.CreateUser... vague error into optional name parameter.](https://github.com/appwrite/appwrite/pull/10033) - `appwrite/appwrite#10033`
+4. 🟢 [test: started adding sample test](https://github.com/Abiji-2020/NexOrb/pull/11) - `Abiji-2020/NexOrb#11`
+5. 🟢 [Updated Documentation ](https://github.com/pravintargaryen/C-AI/pull/1) - `pravintargaryen/C-AI#1`
+
+### ✅ Recently Closed/Merged
+
+- ✓ [Example closed PR](https://github.com/example) - `example/repo#123`
 
 <!-- ACTIVE-PRS:END -->
 <!-- GITHUB-STATS:START -->
@@ -59,11 +63,10 @@
 
 | Metric | Link |
 |--------|------|
-| Metric | Link |
-|--------|------|
 | **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-5-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
 | **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-278-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aclosed) |
 | **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-38-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |
+
 </div>
 <!-- GITHUB-STATS:END -->
 

@@ -30,12 +30,20 @@ jobs:
             const prsOpen = await github.rest.search.issuesAndPullRequests({
               q: 'author:Abiji-2020 type:pr state:open',
               per_page: 10,
-              sort: 'created',
+              sort: 'updated',
+              order: 'desc'
+            });
+
+            // Fetch recently closed/merged PRs
+            const prsClosed = await github.rest.search.issuesAndPullRequests({
+              q: 'author:Abiji-2020 type:pr state:closed',
+              per_page: 5,
+              sort: 'updated',
               order: 'desc'
             });
 
             // Fetch merged PRs count
-            const prsMerged = await github.rest.search.issuesAndPullRequests({
+            const prsMergedCount = await github.rest.search.issuesAndPullRequests({
               q: 'author:Abiji-2020 type:pr state:closed',
               per_page: 1
             });
@@ -47,44 +55,58 @@ jobs:
             });
 
             const openPRCount = prsOpen.data.total_count;
-            const mergedPRCount = prsMerged.data.total_count;
+            const mergedPRCount = prsMergedCount.data.total_count;
             const issuesCount = issues.data.total_count;
 
-            // Build open PRs list
-            let openPRsList = '';
+            // Build open PRs list with emoji
+            let prsList = '';
             if (openPRCount > 0) {
-              openPRsList = '### Currently Working On\n\n';
-              prsOpen.data.items.forEach((pr, index) => {
+              prsList = '### 🔄 Currently Working On\n\n';
+              prsOpen.data.items.forEach((pr) => {
                 const prNumber = pr.number;
                 const repo = pr.repository_url.split('/').slice(-1)[0];
                 const owner = pr.repository_url.split('/').slice(-2, -1)[0];
-                openPRsList += `${index + 1}. [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+                prsList += `- 🟢 [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
               });
-              openPRsList += '\n';
+              prsList += '\n';
             } else {
-              openPRsList = '### Currently Working On\n\nNo active pull requests at the moment.\n\n';
+              prsList = '### 🔄 Currently Working On\n\nNo active pull requests at the moment.\n\n';
             }
 
-            // Build stats table
+            // Build recently closed PRs list with emoji
+            if (prsClosed.data.items.length > 0) {
+              prsList += '### ✅ Recently Closed/Merged\n\n';
+              prsClosed.data.items.forEach((pr) => {
+                const prNumber = pr.number;
+                const repo = pr.repository_url.split('/').slice(-1)[0];
+                const owner = pr.repository_url.split('/').slice(-2, -1)[0];
+                prsList += `- ✓ [${pr.title}](${pr.html_url}) - \`${owner}/${repo}#${prNumber}\`\n`;
+              });
+              prsList += '\n';
+            }
+
+            // Build stats table (with header)
             const statsTable = `| Metric | Link |\n|--------|------|\n| **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-${openPRCount}-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |\n| **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-${mergedPRCount}-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aclosed) |\n| **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-${issuesCount}-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |`;
 
             // Read the README file
             let readmeContent = fs.readFileSync('README.md', 'utf8');
 
-            // Replace the stats table
-            const tableStart = readmeContent.indexOf('| **Open Pull Requests** |');
-            const tableEnd = readmeContent.indexOf('</div>', tableStart) - 1;
+            // Replace the entire stats section (from header to closing div)
+            const statsStart = readmeContent.indexOf('| Metric | Link |');
+            const statsEnd = readmeContent.indexOf('</div>', statsStart) + 6;
 
-            if (tableStart !== -1 && tableEnd > tableStart) {
-              readmeContent = readmeContent.substring(0, tableStart) + statsTable + readmeContent.substring(tableEnd);
+            if (statsStart !== -1 && statsEnd > statsStart) {
+              const beforeStats = readmeContent.substring(0, statsStart);
+              const afterStats = readmeContent.substring(statsEnd);
+              readmeContent = beforeStats + statsTable + '\n' + afterStats;
             }
 
-            // Find and replace the open PRs section if it exists, or add it before GitHub Activity
+            // Find and replace the open PRs section
             const activePRStart = readmeContent.indexOf('<!-- ACTIVE-PRS:START -->');
             const activePREnd = readmeContent.indexOf('<!-- ACTIVE-PRS:END -->');
 
             if (activePRStart !== -1 && activePREnd !== -1) {
-              const newPRSection = `<!-- ACTIVE-PRS:START -->\n${openPRsList}<!-- ACTIVE-PRS:END -->`;
+              const newPRSection = `<!-- ACTIVE-PRS:START -->\n${prsList}<!-- ACTIVE-PRS:END -->`;
               readmeContent = readmeContent.substring(0, activePRStart) + newPRSection + readmeContent.substring(activePREnd + 24);
             }
 
