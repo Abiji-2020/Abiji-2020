@@ -47,6 +47,7 @@
 <!-- ACTIVE-PRS:START -->
 ### 🔄 Currently Working On
 
+- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Feat : creation of MCP server  [WIP]](https://github.com/golemcloud/golem/pull/2268) - `golemcloud/golem#2268`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [rework: removed all the  previous data](https://github.com/Abiji-2020/Portfolio/pull/6) - `Abiji-2020/Portfolio#6`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: add KMS feature in the SDK](https://github.com/Infisical/node-sdk-v2/pull/27) - `Infisical/node-sdk-v2#27`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [fix:  Users.CreateUser... vague error into optional name parameter.](https://github.com/appwrite/appwrite/pull/10033) - `appwrite/appwrite#10033`
@@ -68,13 +69,12 @@
 
 
 
-
 <!-- GITHUB-STATS:START -->
 <div align="center">
 
 | Metric | Link |
 |--------|------|
-| **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-5-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
+| **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-6-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
 | **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-250-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Amerged) |
 | **Closed (Not Merged)** | [![Closed](https://img.shields.io/badge/Closed-29-red?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Aclosed+-is%3Amerged) |
 | **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-38-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |
