@@ -56,16 +56,16 @@
 
 ### ✅ Recently Merged
 
+- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Add files via upload](https://github.com/Abiji-2020/CNS_SEM/pull/1) - `Abiji-2020/CNS_SEM#1`
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: Scheduling of cron jobs. ](https://github.com/InsForge/InsForge/pull/491) - `InsForge/InsForge#491`
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Feat/csv bulk import](https://github.com/InsForge/InsForge/pull/500) - `InsForge/InsForge#500`
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [updating ](https://github.com/Abiji-2020/InsForge/pull/1) - `Abiji-2020/InsForge#1`
-- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [FIX : Single toast for bulk deletion in object storage. ](https://github.com/InsForge/InsForge/pull/479) - `InsForge/InsForge#479`
 
 ### ❌ Recently Closed (Not Merged)
 
 - <img src="./asset/closed-pr.svg" width="24" height="24" alt="Closed PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
 
-<!-- ACTIVE-PRS:END --> -->
+<!-- ACTIVE-PRS:END -->-->
 <div align="center">
 
 | Metric | Link |
