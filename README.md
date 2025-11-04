@@ -68,7 +68,6 @@
 <!-- ACTIVE-PRS:END -->
 
 
-
 |Metric | Link |
 |--------|------|
 | **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-6-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
