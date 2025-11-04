@@ -65,7 +65,7 @@
 
 - <img src="./asset/closed-pr.svg" width="24" height="24" alt="Closed PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
 
-<!-- ACTIVE-PRS:END -->n="center">
+<!-- ACTIVE-PRS:END -->="center">
 
 | Metric | Link |
 |--------|------|
