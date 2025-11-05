@@ -65,7 +65,7 @@
 
 - <img src="./asset/closed-pr.svg" width="24" height="24" alt="Closed PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: Updation of coupons ](https://github.com/dodopayments/dodo-migrate/pull/12) - `dodopayments/dodo-migrate#12`
 
-<!-- ACTIVE-PRS:END -->Metric | Link |
+<!-- ACTIVE-PRS:END -->etric | Link |
 |--------|------|
 | **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-6-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
 | **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-250-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Amerged) |
