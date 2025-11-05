@@ -73,7 +73,7 @@
 | Metric | Count |
 |:---:|:---:|
 | **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-6-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
-| **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-250-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Amerged) |
+| **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-251-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Amerged) |
 | **Closed (Not Merged)** | [![Closed](https://img.shields.io/badge/Closed-29-red?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Aclosed+-is%3Amerged) |
 | **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-38-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |
 
