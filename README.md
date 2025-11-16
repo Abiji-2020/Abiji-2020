@@ -47,8 +47,8 @@
 <!-- ACTIVE-PRS:START -->
 ### 🔄 Currently Working On
 
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: npm/pnpm switch in onboarding page. ](https://github.com/daytonaio/daytona/pull/2903) - `daytonaio/daytona#2903`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: created a walkthrough of the schema and table from the postgres DB](https://github.com/Abiji-2020/pg_ask/pull/1) - `Abiji-2020/pg_ask#1`
+- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: npm/pnpm switch in onboarding page. ](https://github.com/daytonaio/daytona/pull/2903) - `daytonaio/daytona#2903`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Feat : creation of MCP server  [WIP]](https://github.com/golemcloud/golem/pull/2268) - `golemcloud/golem#2268`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [rework: removed all the  previous data](https://github.com/Abiji-2020/Portfolio/pull/6) - `Abiji-2020/Portfolio#6`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: add KMS feature in the SDK](https://github.com/Infisical/node-sdk-v2/pull/27) - `Infisical/node-sdk-v2#27`
