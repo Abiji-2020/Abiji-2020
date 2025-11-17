@@ -47,7 +47,6 @@
 <!-- ACTIVE-PRS:START -->
 ### 🔄 Currently Working On
 
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: addition of pg_execute function ](https://github.com/Abiji-2020/pg_ask/pull/2) - `Abiji-2020/pg_ask#2`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: npm/pnpm switch in onboarding page. ](https://github.com/daytonaio/daytona/pull/2903) - `daytonaio/daytona#2903`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Feat : creation of MCP server  [WIP]](https://github.com/golemcloud/golem/pull/2268) - `golemcloud/golem#2268`
 - <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [rework: removed all the  previous data](https://github.com/Abiji-2020/Portfolio/pull/6) - `Abiji-2020/Portfolio#6`
@@ -58,11 +57,11 @@
 
 ### ✅ Recently Merged
 
+- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: addition of pg_execute function ](https://github.com/Abiji-2020/pg_ask/pull/2) - `Abiji-2020/pg_ask#2`
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: created a walkthrough of the schema and table from the postgres DB](https://github.com/Abiji-2020/pg_ask/pull/1) - `Abiji-2020/pg_ask#1`
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: cron jobs frontend pages ](https://github.com/InsForge/InsForge/pull/573) - `InsForge/InsForge#573`
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Upstream from main branch](https://github.com/Abiji-2020/InsForge/pull/3) - `Abiji-2020/InsForge#3`
 - <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Merge updation ](https://github.com/Abiji-2020/InsForge/pull/2) - `Abiji-2020/InsForge#2`
-- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Add files via upload](https://github.com/Abiji-2020/CNS_SEM/pull/1) - `Abiji-2020/CNS_SEM#1`
 
 <!-- ACTIVE-PRS:END -->
 
@@ -71,8 +70,8 @@
 
 | Metric | Count |
 |:---:|:---:|
-| **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-8-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
-| **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-255-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Amerged) |
+| **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-7-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
+| **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-256-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Amerged) |
 | **Closed (Not Merged)** | [![Closed](https://img.shields.io/badge/Closed-29-red?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Aclosed+-is%3Amerged) |
 | **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-38-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |
 
