@@ -47,22 +47,7 @@
 <!-- ACTIVE-PRS:START -->
 ### 🔄 Currently Working On
 
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [fix: updated the prompt dialog height relative to the screen size](https://github.com/InsForge/InsForge/pull/603) - `InsForge/InsForge#603`
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [rework: removed all the  previous data](https://github.com/Abiji-2020/Portfolio/pull/6) - `Abiji-2020/Portfolio#6`
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Feat : creation of MCP server  [WIP]](https://github.com/golemcloud/golem/pull/2268) - `golemcloud/golem#2268`
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: npm/pnpm switch in onboarding page. ](https://github.com/daytonaio/daytona/pull/2903) - `daytonaio/daytona#2903`
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: add KMS feature in the SDK](https://github.com/Infisical/node-sdk-v2/pull/27) - `Infisical/node-sdk-v2#27`
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [fix:  Users.CreateUser... vague error into optional name parameter.](https://github.com/appwrite/appwrite/pull/10033) - `appwrite/appwrite#10033`
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [test: started adding sample test](https://github.com/Abiji-2020/NexOrb/pull/11) - `Abiji-2020/NexOrb#11`
-- <img src="./asset/open-pr.svg" width="24" height="24" alt="Open PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Updated Documentation ](https://github.com/pravintargaryen/C-AI/pull/1) - `pravintargaryen/C-AI#1`
-
-### ✅ Recently Merged
-
-- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: addition of pg_execute function ](https://github.com/Abiji-2020/pg_ask/pull/2) - `Abiji-2020/pg_ask#2`
-- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: created a walkthrough of the schema and table from the postgres DB](https://github.com/Abiji-2020/pg_ask/pull/1) - `Abiji-2020/pg_ask#1`
-- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [feat: cron jobs frontend pages ](https://github.com/InsForge/InsForge/pull/573) - `InsForge/InsForge#573`
-- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Upstream from main branch](https://github.com/Abiji-2020/InsForge/pull/3) - `Abiji-2020/InsForge#3`
-- <img src="./asset/merge-pr.svg" width="24" height="24" alt="Merged PR" style="vertical-align:text-bottom;margin-right:6px;"/> [Merge updation ](https://github.com/Abiji-2020/InsForge/pull/2) - `Abiji-2020/InsForge#2`
+No active pull requests at the moment.
 
 <!-- ACTIVE-PRS:END -->
 
@@ -71,7 +56,7 @@
 
 | Metric | Count |
 |:---:|:---:|
-| **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-8-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
+| **Open Pull Requests** | [![PRs](https://img.shields.io/badge/Open%20PRs-0-blue?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+state%3Aopen) |
 | **Merged Pull Requests** | [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-256-green?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Amerged) |
 | **Closed (Not Merged)** | [![Closed](https://img.shields.io/badge/Closed-29-red?style=flat-square)](https://github.com/pulls?q=author%3AAbiji-2020+type%3Apr+is%3Aclosed+-is%3Amerged) |
 | **Total Issues Created** | [![Issues](https://img.shields.io/badge/Issues-39-orange?style=flat-square)](https://github.com/issues?q=author%3AAbiji-2020+type%3Aissue) |
